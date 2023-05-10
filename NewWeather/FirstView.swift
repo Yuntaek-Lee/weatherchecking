@@ -13,11 +13,10 @@ struct FirstView: View {
     
     var body: some View {
         VStack {
-            VStack() {
+
                 Text("Weather")
                     .font(.largeTitle)
                     .padding()
-            }
             .multilineTextAlignment(.center)
             
             LocationButton(.shareCurrentLocation) {

@@ -10,8 +10,8 @@ import CoreLocation
 
 class WeatherDataDownload {
     
-    private let API_KEY = "7c0b7b82f383647666c1a91e23e20fdc"
-    
+    private let API_KEY = ""
+
     func getWeather(location: CLLocationCoordinate2D) async throws -> OpenWeatherResponse {
         guard let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(location.latitude)&lon=\(location.longitude)&appid=\(API_KEY)&units=metric"
                 .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { fatalError("URL string not located") }
