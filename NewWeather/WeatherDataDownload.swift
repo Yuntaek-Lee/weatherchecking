@@ -10,7 +10,7 @@ import CoreLocation
 
 class WeatherDataDownload {
     
-    private let API_KEY = ""
+    private let API_KEY = "9c6e374305e3157e7aefc0dec32848f6"
 
     func getWeather(location: CLLocationCoordinate2D) async throws -> OpenWeatherResponse {
         guard let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(location.latitude)&lon=\(location.longitude)&appid=\(API_KEY)&units=metric"
